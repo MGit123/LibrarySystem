@@ -15,8 +15,8 @@ public class bookConnection {
 	
 	public static Connection getConnection() throws ClassNotFoundException  {	 
 		String userName = "root";//用户名
-		String userPwd = "lgx123456";//密码
-		String dburl = "jdbc:mysql://cdb-4nwq78pt.gz.tencentcdb.com:10050/BookM";//数据库名
+		String userPwd = "自己的数据库登录密码";//密码
+		String dburl = "jdbc:mysql://"端口号"/BookM";//数据库名
 		String driverName = "com.mysql.jdbc.Driver";//数据库驱动
 		    Connection dbCon;  
 		      try
