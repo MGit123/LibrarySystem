@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#h{
+	position:absolute;
+	top:-5px;
+	
+}
+
+#tx{
+	position:absolute;
+	top:20px;
+	right:50px;
+	height:40px;
+	length:120px;
+	
+}
+
+.icon{
+	height:40px;
+	float:left;
+	length:50px;
+}
+
+.p{
+	flaot:left;
+	margin-left:50px;
+}
+
+.biao{
+	padding-left:600px;
+	font-size:23px; 
+	color:white;
+}
+
+.huan{
+	padding-left:200px;
+	font-size:15px;
+}

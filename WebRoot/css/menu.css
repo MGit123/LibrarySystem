@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+
+#menu{
+position:absolute;
+top:0px;
+left:0px;	
+width:100%;
+}
+ul{
+    margin: 0 auto;
+    width: 100%;
+    background: #34495e;
+    list-style: none;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul>li{
+    color: #fff;
+    background: #34495e;
+    padding: 1em;
+    border-bottom: 0.5em solid #2c3e50;
+    margin-top: 0.25em;
+    border-left: 0.5em groove #e74c3c;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+a{
+	 text-decoration: none;
+	 color:#83D4C5;
+}
+
+a:hover{
+	color:red;
+}
+
+i{
+    padding-right: 0.5em;
+}
+.active{
+    border-left: 0.5em groove #1abc9c;
+}
+
+li:hover{
+    background:#E8F2FE;
+    border-left: 0.5em groove #3498db;
+    color:red;
+}
+
+.cur{ background:#E8F2FE; font-weight:bold;}
+
+
+.unread{
+    float: right;
+    background: #e74c3c;
+    width: 2em;
+    border-radius: 50%;
+    font-size: 0.75em;
+    line-height: 2;
+    text-align: center;
+    animation: notificationpulse 0.5s infinite;
+    -webkit-animation: notificationpulse 0.5s infinite;
+    -moz-animation: notificationpulse 0.5s infinite;
+}
+/*the animations */
+@keyframes notificationpulse {
+  0% {
+    box-shadow: 0 0 0 0.00em #c0392b;
+  }
+  25% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  50% {
+    box-shadow: 0 0 0 0.50em #c0392b;
+  }
+  75% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  100% {
+    box-shadow: 0 0 0 0.15em #c0392b;
+  }
+}
+@-webkit-keyframes notificationpulse {
+  0% {
+    box-shadow: 0 0 0 0.00em #c0392b;
+  }
+  25% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  50% {
+    box-shadow: 0 0 0 0.50em #c0392b;
+  }
+  75% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  100% {
+    box-shadow: 0 0 0 0.15em #c0392b;
+  }
+}
+
+@-moz-keyframes notificationpulse {
+  0% {
+    box-shadow: 0 0 0 0.00em #c0392b;
+  }
+  25% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  50% {
+    box-shadow: 0 0 0 0.50em #c0392b;
+  }
+  75% {
+    box-shadow: 0 0 0 0.25em #c0392b;
+  }
+  100% {
+    box-shadow: 0 0 0 0.15em #c0392b;
+  }
+}

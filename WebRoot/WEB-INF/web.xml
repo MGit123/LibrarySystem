@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LibraryManage</display-name>
+  <servlet>
+    <servlet-name>ICodeCheck</servlet-name>
+    <servlet-class>com.servlet.ICodeCheck</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListServlet</servlet-name>
+    <servlet-class>com.servlet.ListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AutoLogin</servlet-name>
+    <servlet-class>com.servlet.AutoLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QuitServlet</servlet-name>
+    <servlet-class>com.servlet.QuitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckServlet</servlet-name>
+    <servlet-class>com.servlet.CheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BKIServlet</servlet-name>
+    <servlet-class>com.servlet.BKIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>passUpdate</servlet-name>
+    <servlet-class>com.servlet.passUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>com.servlet.AddBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleBook</servlet-name>
+    <servlet-class>com.servlet.DeleBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RefundMoney</servlet-name>
+    <servlet-class>com.servlet.RefundMoney</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ICodeCheck</servlet-name>
+    <url-pattern>/ICodeCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListServlet</servlet-name>
+    <url-pattern>/ListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AutoLogin</servlet-name>
+    <url-pattern>/AutoLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuitServlet</servlet-name>
+    <url-pattern>/Quit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckServlet</servlet-name>
+    <url-pattern>/CheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BKIServlet</servlet-name>
+    <url-pattern>/BKIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>passUpdate</servlet-name>
+    <url-pattern>/passUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/AddBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleBook</servlet-name>
+    <url-pattern>/DeleBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefundMoney</servlet-name>
+    <url-pattern>/RefundMoney</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+      <filter-name>AutoFilter</filter-name>
+      <filter-class>com.Filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>AutoFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
